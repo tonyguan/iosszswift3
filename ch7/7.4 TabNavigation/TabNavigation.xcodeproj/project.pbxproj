@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B0A04F19EE673D0027BA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0A04E19EE673D0027BA3E /* AppDelegate.swift */; };
+		43B0A05619EE673D0027BA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A05419EE673D0027BA3E /* Main.storyboard */; };
+		43B0A05819EE673D0027BA3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A05719EE673D0027BA3E /* Images.xcassets */; };
+		43B0A05B19EE673D0027BA3E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A05919EE673D0027BA3E /* LaunchScreen.xib */; };
+		43B0A06719EE673D0027BA3E /* TabNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0A06619EE673D0027BA3E /* TabNavigationTests.swift */; };
+		43B0A07119EE6C310027BA3E /* LiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0A07019EE6C310027BA3E /* LiaoViewController.swift */; };
+		43B0A07319EE6E970027BA3E /* HeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0A07219EE6E970027BA3E /* HeiViewController.swift */; };
+		43B0A07519EE6EAC0027BA3E /* JiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0A07419EE6EAC0027BA3E /* JiViewController.swift */; };
+		43B0A07D19EE70610027BA3E /* hei.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07719EE70610027BA3E /* hei.png */; };
+		43B0A07E19EE70610027BA3E /* hei@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07819EE70610027BA3E /* hei@2x.png */; };
+		43B0A07F19EE70610027BA3E /* Ji.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07919EE70610027BA3E /* Ji.png */; };
+		43B0A08019EE70610027BA3E /* Ji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07A19EE70610027BA3E /* Ji@2x.png */; };
+		43B0A08119EE70610027BA3E /* Liao.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07B19EE70610027BA3E /* Liao.png */; };
+		43B0A08219EE70610027BA3E /* Liao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B0A07C19EE70610027BA3E /* Liao@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43B0A06119EE673D0027BA3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B0A04119EE673D0027BA3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B0A04819EE673D0027BA3E;
+			remoteInfo = TabNavigation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43B0A04919EE673D0027BA3E /* TabNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B0A04D19EE673D0027BA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B0A04E19EE673D0027BA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43B0A05519EE673D0027BA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43B0A05719EE673D0027BA3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43B0A05A19EE673D0027BA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		43B0A06019EE673D0027BA3E /* TabNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B0A06519EE673D0027BA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B0A06619EE673D0027BA3E /* TabNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationTests.swift; sourceTree = "<group>"; };
+		43B0A07019EE6C310027BA3E /* LiaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiaoViewController.swift; sourceTree = "<group>"; };
+		43B0A07219EE6E970027BA3E /* HeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeiViewController.swift; sourceTree = "<group>"; };
+		43B0A07419EE6EAC0027BA3E /* JiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiViewController.swift; sourceTree = "<group>"; };
+		43B0A07719EE70610027BA3E /* hei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hei.png; sourceTree = "<group>"; };
+		43B0A07819EE70610027BA3E /* hei@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hei@2x.png"; sourceTree = "<group>"; };
+		43B0A07919EE70610027BA3E /* Ji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ji.png; sourceTree = "<group>"; };
+		43B0A07A19EE70610027BA3E /* Ji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ji@2x.png"; sourceTree = "<group>"; };
+		43B0A07B19EE70610027BA3E /* Liao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Liao.png; sourceTree = "<group>"; };
+		43B0A07C19EE70610027BA3E /* Liao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Liao@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B0A04619EE673D0027BA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B0A05D19EE673D0027BA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B0A04019EE673D0027BA3E = {
+			isa = PBXGroup;
+			children = (
+				43B0A07619EE70610027BA3E /* tabicons */,
+				43B0A04B19EE673D0027BA3E /* TabNavigation */,
+				43B0A06319EE673D0027BA3E /* TabNavigationTests */,
+				43B0A04A19EE673D0027BA3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B0A04A19EE673D0027BA3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A04919EE673D0027BA3E /* TabNavigation.app */,
+				43B0A06019EE673D0027BA3E /* TabNavigationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B0A04B19EE673D0027BA3E /* TabNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A04E19EE673D0027BA3E /* AppDelegate.swift */,
+				43B0A07019EE6C310027BA3E /* LiaoViewController.swift */,
+				43B0A07419EE6EAC0027BA3E /* JiViewController.swift */,
+				43B0A07219EE6E970027BA3E /* HeiViewController.swift */,
+				43B0A05419EE673D0027BA3E /* Main.storyboard */,
+				43B0A05719EE673D0027BA3E /* Images.xcassets */,
+				43B0A05919EE673D0027BA3E /* LaunchScreen.xib */,
+				43B0A04C19EE673D0027BA3E /* Supporting Files */,
+			);
+			path = TabNavigation;
+			sourceTree = "<group>";
+		};
+		43B0A04C19EE673D0027BA3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A04D19EE673D0027BA3E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B0A06319EE673D0027BA3E /* TabNavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A06619EE673D0027BA3E /* TabNavigationTests.swift */,
+				43B0A06419EE673D0027BA3E /* Supporting Files */,
+			);
+			path = TabNavigationTests;
+			sourceTree = "<group>";
+		};
+		43B0A06419EE673D0027BA3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A06519EE673D0027BA3E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B0A07619EE70610027BA3E /* tabicons */ = {
+			isa = PBXGroup;
+			children = (
+				43B0A07719EE70610027BA3E /* hei.png */,
+				43B0A07819EE70610027BA3E /* hei@2x.png */,
+				43B0A07919EE70610027BA3E /* Ji.png */,
+				43B0A07A19EE70610027BA3E /* Ji@2x.png */,
+				43B0A07B19EE70610027BA3E /* Liao.png */,
+				43B0A07C19EE70610027BA3E /* Liao@2x.png */,
+			);
+			path = tabicons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B0A04819EE673D0027BA3E /* TabNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B0A06A19EE673D0027BA3E /* Build configuration list for PBXNativeTarget "TabNavigation" */;
+			buildPhases = (
+				43B0A04519EE673D0027BA3E /* Sources */,
+				43B0A04619EE673D0027BA3E /* Frameworks */,
+				43B0A04719EE673D0027BA3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabNavigation;
+			productName = TabNavigation;
+			productReference = 43B0A04919EE673D0027BA3E /* TabNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43B0A05F19EE673D0027BA3E /* TabNavigationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B0A06D19EE673D0027BA3E /* Build configuration list for PBXNativeTarget "TabNavigationTests" */;
+			buildPhases = (
+				43B0A05C19EE673D0027BA3E /* Sources */,
+				43B0A05D19EE673D0027BA3E /* Frameworks */,
+				43B0A05E19EE673D0027BA3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B0A06219EE673D0027BA3E /* PBXTargetDependency */,
+			);
+			name = TabNavigationTests;
+			productName = TabNavigationTests;
+			productReference = 43B0A06019EE673D0027BA3E /* TabNavigationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B0A04119EE673D0027BA3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = tonyguan;
+				TargetAttributes = {
+					43B0A04819EE673D0027BA3E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					43B0A05F19EE673D0027BA3E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 43B0A04819EE673D0027BA3E;
+					};
+				};
+			};
+			buildConfigurationList = 43B0A04419EE673D0027BA3E /* Build configuration list for PBXProject "TabNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B0A04019EE673D0027BA3E;
+			productRefGroup = 43B0A04A19EE673D0027BA3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B0A04819EE673D0027BA3E /* TabNavigation */,
+				43B0A05F19EE673D0027BA3E /* TabNavigationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B0A04719EE673D0027BA3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B0A08119EE70610027BA3E /* Liao.png in Resources */,
+				43B0A08019EE70610027BA3E /* Ji@2x.png in Resources */,
+				43B0A07F19EE70610027BA3E /* Ji.png in Resources */,
+				43B0A07D19EE70610027BA3E /* hei.png in Resources */,
+				43B0A05619EE673D0027BA3E /* Main.storyboard in Resources */,
+				43B0A08219EE70610027BA3E /* Liao@2x.png in Resources */,
+				43B0A07E19EE70610027BA3E /* hei@2x.png in Resources */,
+				43B0A05B19EE673D0027BA3E /* LaunchScreen.xib in Resources */,
+				43B0A05819EE673D0027BA3E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B0A05E19EE673D0027BA3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B0A04519EE673D0027BA3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B0A07319EE6E970027BA3E /* HeiViewController.swift in Sources */,
+				43B0A04F19EE673D0027BA3E /* AppDelegate.swift in Sources */,
+				43B0A07119EE6C310027BA3E /* LiaoViewController.swift in Sources */,
+				43B0A07519EE6EAC0027BA3E /* JiViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B0A05C19EE673D0027BA3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B0A06719EE673D0027BA3E /* TabNavigationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43B0A06219EE673D0027BA3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B0A04819EE673D0027BA3E /* TabNavigation */;
+			targetProxy = 43B0A06119EE673D0027BA3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43B0A05419EE673D0027BA3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B0A05519EE673D0027BA3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43B0A05919EE673D0027BA3E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B0A05A19EE673D0027BA3E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43B0A06819EE673D0027BA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B0A06919EE673D0027BA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B0A06B19EE673D0027BA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43B0A06C19EE673D0027BA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		43B0A06E19EE673D0027BA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TabNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabNavigation.app/TabNavigation";
+			};
+			name = Debug;
+		};
+		43B0A06F19EE673D0027BA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TabNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabNavigation.app/TabNavigation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B0A04419EE673D0027BA3E /* Build configuration list for PBXProject "TabNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B0A06819EE673D0027BA3E /* Debug */,
+				43B0A06919EE673D0027BA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B0A06A19EE673D0027BA3E /* Build configuration list for PBXNativeTarget "TabNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B0A06B19EE673D0027BA3E /* Debug */,
+				43B0A06C19EE673D0027BA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43B0A06D19EE673D0027BA3E /* Build configuration list for PBXNativeTarget "TabNavigationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B0A06E19EE673D0027BA3E /* Debug */,
+				43B0A06F19EE673D0027BA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B0A04119EE673D0027BA3E /* Project object */;
+}

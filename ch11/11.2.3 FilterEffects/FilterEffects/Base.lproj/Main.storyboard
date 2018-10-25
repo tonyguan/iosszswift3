@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FilterEffects" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Se0-fx-eLq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ugN-qS-7WZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raW-FG-AiN">
+                                <rect key="frame" x="5" y="45" width="310" height="230"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nf2-Cp-WRS">
+                                <rect key="frame" x="88" y="336" width="133" height="29"/>
+                                <segments>
+                                    <segment title="旧色调"/>
+                                    <segment title="高斯模糊"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="128" y="357" width="133" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="segmentSelected:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9QV-5k-CaS"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" minimumValueImage="mouse.png" maximumValueImage="elephant.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYM-6n-5e5">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <connections>
+                                    <action selector="changeValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6KJ-S2-9he"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-tn-3EJ">
+                                <rect key="frame" x="64" y="462" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="raW-FG-AiN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="3" id="1aJ-RS-sTI"/>
+                            <constraint firstItem="ya9-tn-3EJ" firstAttribute="top" secondItem="RYM-6n-5e5" secondAttribute="bottom" constant="63" id="58C-MV-uwe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="66"/>
+                            </constraint>
+                            <constraint firstItem="RYM-6n-5e5" firstAttribute="centerX" secondItem="ya9-tn-3EJ" secondAttribute="centerX" id="7J7-ft-qiI"/>
+                            <constraint firstItem="raW-FG-AiN" firstAttribute="top" secondItem="Se0-fx-eLq" secondAttribute="bottom" id="7cv-Lb-f5s"/>
+                            <constraint firstItem="RYM-6n-5e5" firstAttribute="top" secondItem="nf2-Cp-WRS" secondAttribute="bottom" constant="71" id="De5-P8-ygk"/>
+                            <constraint firstItem="nf2-Cp-WRS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="357" id="O03-5g-gQ0"/>
+                            <constraint firstAttribute="centerX" secondItem="nf2-Cp-WRS" secondAttribute="centerX" id="PTA-6P-wAy"/>
+                            <constraint firstAttribute="centerX" secondItem="RYM-6n-5e5" secondAttribute="centerX" id="U67-nE-NKn"/>
+                            <constraint firstItem="RYM-6n-5e5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="21" id="URw-aU-e6u"/>
+                            <constraint firstItem="ya9-tn-3EJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="91" id="V4J-aQ-Kwj">
+                                <variation key="heightClass=regular-widthClass=compact" constant="46"/>
+                            </constraint>
+                            <constraint firstItem="nf2-Cp-WRS" firstAttribute="top" secondItem="raW-FG-AiN" secondAttribute="bottom" constant="74" id="neR-LP-nzY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="raW-FG-AiN" secondAttribute="trailing" constant="3" id="qej-kH-Wjx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RYM-6n-5e5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1aJ-RS-sTI"/>
+                                <exclude reference="7cv-Lb-f5s"/>
+                                <exclude reference="qej-kH-Wjx"/>
+                                <exclude reference="O03-5g-gQ0"/>
+                                <exclude reference="PTA-6P-wAy"/>
+                                <exclude reference="neR-LP-nzY"/>
+                                <exclude reference="7J7-ft-qiI"/>
+                                <exclude reference="De5-P8-ygk"/>
+                                <exclude reference="U67-nE-NKn"/>
+                                <exclude reference="URw-aU-e6u"/>
+                                <exclude reference="58C-MV-uwe"/>
+                                <exclude reference="V4J-aQ-Kwj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RYM-6n-5e5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1aJ-RS-sTI"/>
+                                <include reference="7cv-Lb-f5s"/>
+                                <include reference="qej-kH-Wjx"/>
+                                <include reference="O03-5g-gQ0"/>
+                                <include reference="PTA-6P-wAy"/>
+                                <include reference="neR-LP-nzY"/>
+                                <include reference="7J7-ft-qiI"/>
+                                <include reference="De5-P8-ygk"/>
+                                <include reference="U67-nE-NKn"/>
+                                <include reference="URw-aU-e6u"/>
+                                <include reference="58C-MV-uwe"/>
+                                <include reference="V4J-aQ-Kwj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="raW-FG-AiN" id="tDt-4C-mh3"/>
+                        <outlet property="label" destination="ya9-tn-3EJ" id="GB6-Qe-AGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elephant.png" width="32" height="23"/>
+        <image name="mouse.png" width="21" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDatePickerViewController">
+            <connections>
+                <outlet property="datePickerView" destination="23" id="dfo-xE-VV1"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Pn2-JG-GW2"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="6">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7">
+                                <connections>
+                                    <action selector="cancel:" destination="-1" id="sye-VG-QNA"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="done" id="8">
+                                <connections>
+                                    <action selector="done:" destination="-1" id="BzU-x4-Jsg"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                    <rect key="frame" x="0.0" y="45" width="320" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="380786140.20634401">
+                        <!--2013-01-25 05:55:40 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="zh_CN"/>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="23" secondAttribute="bottom" id="8QQ-U5-bJ8"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="1" secondAttribute="top" id="8mx-xw-dHR"/>
+                <constraint firstItem="23" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="1" id="It8-fv-zTP"/>
+                <constraint firstItem="5" firstAttribute="trailing" secondItem="23" secondAttribute="trailing" id="Yre-Vw-TI6"/>
+                <constraint firstItem="23" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="jQy-FS-aCU"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="23" secondAttribute="leading" id="uhH-tI-0I1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="436" y="453.5"/>
+        </view>
+    </objects>
+</document>

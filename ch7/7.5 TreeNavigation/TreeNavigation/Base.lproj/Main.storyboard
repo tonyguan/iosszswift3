@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cK8-WV-jUZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="38M-AH-B8A">
+            <objects>
+                <tableViewController id="Lu0-Ow-Xpq" customClass="ViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bhP-Px-4jl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellIdentifier" id="c60-p7-BZ4">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c60-p7-BZ4" id="wwi-ec-uU1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="eN0-Xa-JzB" kind="show" identifier="ShowSelectedProvince" id="TD5-Ag-k6Q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lu0-Ow-Xpq" id="xVS-3T-bee"/>
+                            <outlet property="delegate" destination="Lu0-Ow-Xpq" id="AHQ-8u-W9X"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="8aY-H9-zF9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uas-eq-bdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="438"/>
+        </scene>
+        <!--Cities View Controller-->
+        <scene sceneID="dJA-iv-W3T">
+            <objects>
+                <tableViewController id="eN0-Xa-JzB" customClass="CitiesViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Qr-lH-fND">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="CellIdentifier" id="tW7-yE-bt3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tW7-yE-bt3" id="Hbc-UM-4jM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wbP-ll-7C1" kind="show" identifier="ShowSelectedCity" id="b9h-LN-Hyp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eN0-Xa-JzB" id="egQ-61-LSI"/>
+                            <outlet property="delegate" destination="eN0-Xa-JzB" id="AhQ-Eg-5zZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEu-nz-6R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="438"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1wW-2O-7iY">
+            <objects>
+                <viewController id="wbP-ll-7C1" customClass="DetailViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w1d-gi-Bbv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ed4-jK-0lE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVG-7R-g2o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfC-g5-HQ0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RfC-g5-HQ0" firstAttribute="leading" secondItem="HVG-7R-g2o" secondAttribute="leading" id="GqL-j4-u6d"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RfC-g5-HQ0" secondAttribute="bottom" constant="-7" id="kEj-hZ-WMl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RfC-g5-HQ0" secondAttribute="trailing" constant="-24" id="ndh-58-axO"/>
+                            <constraint firstItem="RfC-g5-HQ0" firstAttribute="top" secondItem="w1d-gi-Bbv" secondAttribute="bottom" id="xTR-fH-dYu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RfC-g5-HQ0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GqL-j4-u6d"/>
+                                <exclude reference="kEj-hZ-WMl"/>
+                                <exclude reference="ndh-58-axO"/>
+                                <exclude reference="xTR-fH-dYu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RfC-g5-HQ0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GqL-j4-u6d"/>
+                                <include reference="kEj-hZ-WMl"/>
+                                <include reference="ndh-58-axO"/>
+                                <include reference="xTR-fH-dYu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="RfC-g5-HQ0" id="D0U-yg-oG3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCo-9o-fI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gP1-o9-ntQ">
+            <objects>
+                <navigationController id="cK8-WV-jUZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybg-Eq-1O8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lu0-Ow-Xpq" kind="relationship" relationship="rootViewController" id="aak-wu-5Wq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xd-jo-DSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-456" y="438"/>
+        </scene>
+    </scenes>
+</document>

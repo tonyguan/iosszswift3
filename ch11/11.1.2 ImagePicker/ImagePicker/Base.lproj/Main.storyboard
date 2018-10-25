@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b12-am-JzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="X61-bx-5JD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYO-WI-7sr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-Iu-289">
+                                <rect key="frame" x="225" y="350" width="150" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RVZ-kZ-MlO"/>
+                                    <constraint firstAttribute="width" constant="150" id="gXT-Kt-OkD"/>
+                                    <constraint firstAttribute="width" constant="150" id="v9n-dr-98V"/>
+                                    <constraint firstAttribute="height" constant="44" id="yra-Lq-HQK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="从图片库中选取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="v9n-dr-98V"/>
+                                        <exclude reference="yra-Lq-HQK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="RVZ-kZ-MlO"/>
+                                        <exclude reference="gXT-Kt-OkD"/>
+                                        <include reference="v9n-dr-98V"/>
+                                        <include reference="yra-Lq-HQK"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pickPhotoLibrary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="khZ-fW-KvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa9-wK-Bhh">
+                                <rect key="frame" x="225" y="429" width="150" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="从照相机中抓取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mdz-QE-dwH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VYO-WI-7sr" secondAttribute="bottom" id="3s8-sa-tkf"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="centerX" secondItem="Oa9-wK-Bhh" secondAttribute="centerX" id="5F6-41-Ut7"/>
+                            <constraint firstItem="Oa9-wK-Bhh" firstAttribute="top" secondItem="dxO-Iu-289" secondAttribute="bottom" constant="35" id="7Dl-O4-Kgi"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="trailing" secondItem="Oa9-wK-Bhh" secondAttribute="trailing" id="8nZ-Ib-QyK"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="top" secondItem="b12-am-JzH" secondAttribute="bottom" constant="330" id="HZf-4E-Yo3"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="II5-yH-owB"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Mgx-3g-YrB"/>
+                            <constraint firstItem="Oa9-wK-Bhh" firstAttribute="leading" secondItem="dxO-Iu-289" secondAttribute="leading" id="U98-vK-rtT"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Wkh-m8-V0w"/>
+                            <constraint firstItem="X61-bx-5JD" firstAttribute="top" secondItem="Oa9-wK-Bhh" secondAttribute="bottom" constant="109" id="aq7-rO-TZN"/>
+                            <constraint firstAttribute="trailing" secondItem="VYO-WI-7sr" secondAttribute="trailing" id="bW5-rK-ndd"/>
+                            <constraint firstItem="X61-bx-5JD" firstAttribute="top" secondItem="Oa9-wK-Bhh" secondAttribute="bottom" constant="109" id="dFg-jo-nCn"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="bottom" secondItem="X61-bx-5JD" secondAttribute="top" id="igq-cp-omL"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="centerX" secondItem="VYO-WI-7sr" secondAttribute="centerX" id="ivO-aH-LGf"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="leading" secondItem="Oa9-wK-Bhh" secondAttribute="leading" id="mvG-7s-q1q"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="top" secondItem="b12-am-JzH" secondAttribute="bottom" constant="330" id="n1u-YE-JIG"/>
+                            <constraint firstItem="Oa9-wK-Bhh" firstAttribute="top" secondItem="dxO-Iu-289" secondAttribute="bottom" constant="35" id="sOa-C9-Vxw"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="trailing" secondItem="Oa9-wK-Bhh" secondAttribute="trailing" id="tpl-CR-UEc"/>
+                            <constraint firstAttribute="trailing" secondItem="VYO-WI-7sr" secondAttribute="trailing" id="uJn-uF-E7K"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="xx5-js-JXc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mgx-3g-YrB"/>
+                                <exclude reference="bW5-rK-ndd"/>
+                                <exclude reference="igq-cp-omL"/>
+                                <exclude reference="xx5-js-JXc"/>
+                                <exclude reference="8nZ-Ib-QyK"/>
+                                <exclude reference="ivO-aH-LGf"/>
+                                <exclude reference="mvG-7s-q1q"/>
+                                <exclude reference="n1u-YE-JIG"/>
+                                <exclude reference="sOa-C9-Vxw"/>
+                                <exclude reference="aq7-rO-TZN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="3s8-sa-tkf"/>
+                                <exclude reference="5F6-41-Ut7"/>
+                                <exclude reference="II5-yH-owB"/>
+                                <include reference="Mgx-3g-YrB"/>
+                                <exclude reference="Wkh-m8-V0w"/>
+                                <include reference="bW5-rK-ndd"/>
+                                <include reference="igq-cp-omL"/>
+                                <exclude reference="uJn-uF-E7K"/>
+                                <include reference="xx5-js-JXc"/>
+                                <include reference="8nZ-Ib-QyK"/>
+                                <exclude reference="HZf-4E-Yo3"/>
+                                <include reference="ivO-aH-LGf"/>
+                                <include reference="mvG-7s-q1q"/>
+                                <include reference="n1u-YE-JIG"/>
+                                <exclude reference="tpl-CR-UEc"/>
+                                <exclude reference="7Dl-O4-Kgi"/>
+                                <exclude reference="U98-vK-rtT"/>
+                                <include reference="sOa-C9-Vxw"/>
+                                <include reference="aq7-rO-TZN"/>
+                                <exclude reference="dFg-jo-nCn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VYO-WI-7sr" id="nA4-L3-ahz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.875" y="453.16901408450701"/>
+        </scene>
+    </scenes>
+</document>

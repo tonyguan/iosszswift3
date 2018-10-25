@@ -1,0 +1,10 @@
+//
+//  PrefixHeader.pch
+//  JiaGeXian4iPhone
+//
+//  Created by tony on 15/5/28.
+//  Copyright (c) 2015年 tony.guan. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#define ARC_ENABLED

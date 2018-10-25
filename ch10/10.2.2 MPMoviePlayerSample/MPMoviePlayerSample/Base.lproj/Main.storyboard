@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k7a-cb-GB7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uVW-tb-Tbb">
+            <objects>
+                <viewController id="k7a-cb-GB7" customClass="ViewController" customModule="MPMoviePlayerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="355-jn-HCW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Erl-6a-suU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KzK-fU-OXg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-Zc-jnV">
+                                <rect key="frame" x="148" y="97" width="304" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="1eK-9E-jGC"/>
+                                    <constraint firstAttribute="width" constant="304" id="JYQ-b7-YMv"/>
+                                    <constraint firstAttribute="width" constant="304" id="T9q-fS-psn"/>
+                                    <constraint firstAttribute="height" constant="40" id="UsN-f0-B09"/>
+                                    <constraint firstAttribute="height" constant="40" id="j4r-bZ-2ai"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="使用MPMoviePlayerController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JYQ-b7-YMv"/>
+                                        <exclude reference="T9q-fS-psn"/>
+                                        <exclude reference="j4r-bZ-2ai"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="1eK-9E-jGC"/>
+                                        <include reference="T9q-fS-psn"/>
+                                        <exclude reference="UsN-f0-B09"/>
+                                        <include reference="j4r-bZ-2ai"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="1eK-9E-jGC"/>
+                                        <include reference="JYQ-b7-YMv"/>
+                                        <exclude reference="UsN-f0-B09"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="useMPMoviePlayerController:" destination="k7a-cb-GB7" eventType="touchUpInside" id="h0f-Jw-llu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjA-nM-ctk">
+                                <rect key="frame" x="148" y="196" width="304" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="A62-QT-KrU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="使用MPMoviePlayerViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A62-QT-KrU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="A62-QT-KrU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="useMPMoviePlayerViewController:" destination="k7a-cb-GB7" eventType="touchUpInside" id="Add-pZ-jiG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ERH-Zc-jnV" secondAttribute="centerX" id="5Az-Ea-0DL"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="leading" secondItem="HjA-nM-ctk" secondAttribute="leading" id="KAM-Eo-o6r"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="leading" secondItem="HjA-nM-ctk" secondAttribute="leading" id="Na8-ZE-VOm"/>
+                            <constraint firstItem="HjA-nM-ctk" firstAttribute="centerX" secondItem="KzK-fU-OXg" secondAttribute="centerX" id="OMb-mU-olH"/>
+                            <constraint firstItem="HjA-nM-ctk" firstAttribute="top" secondItem="ERH-Zc-jnV" secondAttribute="bottom" constant="59" id="UID-27-lIS"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="leading" secondItem="HjA-nM-ctk" secondAttribute="leading" id="UJz-fU-8eU"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="top" secondItem="355-jn-HCW" secondAttribute="bottom" constant="77" id="W1G-gx-bfz"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="centerX" secondItem="KzK-fU-OXg" secondAttribute="centerX" id="Wzm-vG-FLc"/>
+                            <constraint firstItem="Erl-6a-suU" firstAttribute="top" secondItem="HjA-nM-ctk" secondAttribute="bottom" constant="166" id="XDv-r8-RbQ"/>
+                            <constraint firstItem="HjA-nM-ctk" firstAttribute="top" secondItem="ERH-Zc-jnV" secondAttribute="bottom" constant="64" id="ah3-WB-h9d"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="top" secondItem="355-jn-HCW" secondAttribute="bottom" constant="77" id="cpe-Ib-V04"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="top" secondItem="355-jn-HCW" secondAttribute="bottom" constant="77" id="dpZ-hL-wel"/>
+                            <constraint firstItem="HjA-nM-ctk" firstAttribute="top" secondItem="ERH-Zc-jnV" secondAttribute="bottom" constant="66" id="iKu-7b-SbZ"/>
+                            <constraint firstItem="ERH-Zc-jnV" firstAttribute="trailing" secondItem="HjA-nM-ctk" secondAttribute="trailing" id="k6f-ON-wEg"/>
+                            <constraint firstItem="HjA-nM-ctk" firstAttribute="trailing" secondItem="ERH-Zc-jnV" secondAttribute="trailing" id="nmf-Gi-X2o"/>
+                            <constraint firstAttribute="centerX" secondItem="HjA-nM-ctk" secondAttribute="centerX" id="sXV-B5-7nr"/>
+                            <constraint firstItem="Erl-6a-suU" firstAttribute="top" secondItem="HjA-nM-ctk" secondAttribute="bottom" constant="364" id="y9Z-7o-gcy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KAM-Eo-o6r"/>
+                                <exclude reference="Na8-ZE-VOm"/>
+                                <exclude reference="W1G-gx-bfz"/>
+                                <exclude reference="Wzm-vG-FLc"/>
+                                <exclude reference="cpe-Ib-V04"/>
+                                <exclude reference="k6f-ON-wEg"/>
+                                <exclude reference="OMb-mU-olH"/>
+                                <exclude reference="ah3-WB-h9d"/>
+                                <exclude reference="iKu-7b-SbZ"/>
+                                <exclude reference="nmf-Gi-X2o"/>
+                                <exclude reference="XDv-r8-RbQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="5Az-Ea-0DL"/>
+                                <include reference="KAM-Eo-o6r"/>
+                                <exclude reference="UJz-fU-8eU"/>
+                                <include reference="Wzm-vG-FLc"/>
+                                <include reference="cpe-Ib-V04"/>
+                                <exclude reference="dpZ-hL-wel"/>
+                                <include reference="k6f-ON-wEg"/>
+                                <exclude reference="UID-27-lIS"/>
+                                <include reference="iKu-7b-SbZ"/>
+                                <exclude reference="sXV-B5-7nr"/>
+                                <exclude reference="y9Z-7o-gcy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="5Az-Ea-0DL"/>
+                                <include reference="Na8-ZE-VOm"/>
+                                <exclude reference="UJz-fU-8eU"/>
+                                <include reference="W1G-gx-bfz"/>
+                                <exclude reference="dpZ-hL-wel"/>
+                                <include reference="OMb-mU-olH"/>
+                                <exclude reference="UID-27-lIS"/>
+                                <include reference="ah3-WB-h9d"/>
+                                <include reference="nmf-Gi-X2o"/>
+                                <exclude reference="sXV-B5-7nr"/>
+                                <include reference="XDv-r8-RbQ"/>
+                                <exclude reference="y9Z-7o-gcy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mm9-Ur-n0M" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="391.99999999999994"/>
+        </scene>
+    </scenes>
+</document>
